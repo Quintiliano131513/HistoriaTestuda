@@ -1,0 +1,85 @@
+.DivisaoTextoIndigena{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1800px;
+    height: auto;
+    padding: 100px;
+    padding-left: 390px;
+    padding-right: 390px;
+    padding-bottom: 5px;;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border : 2px solid rgb(50, 255, 9);
+    color: white;
+    align-items: center;
+}
+.ImagemIndigenas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+    
+}
+.DivisaoTextoIndigena{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;       /* evita largura fixa excessiva */
+    width: 95%;
+    padding: 60px 60px;      /* padding mais equilibrado */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centra conteúdo no meio da caixa */
+    gap: 24px;                /* distancia entre texto e imagem (diminuir para aproximar) */
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 2px solid rgb(50, 255, 9);
+    color: white;
+    box-sizing: border-box;
+}
+
+/* texto principal ao lado da imagem */
+.DivisaoTextoIndigena p, .TextoIndigena {
+    max-width: 480px;       /* largura do bloco de texto */
+    color: #fff;
+    text-align: justify;
+    margin: 0;
+    margin-right: 8px;      /* pequeno espaço adicional próximo à imagem */
+    line-height: 1.6;
+    font-size: 20px;        /* aumente aqui para maior fonte (ex: 22px) */
+}
+
+/* imagem ao lado direito */
+.ImagemIndigenas {
+    width: 520px;           /* ajuste o tamanho da imagem conforme necessário */
+    max-width: 45%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+    .DivisaoTextoIndigena {
+        flex-direction: column-reverse;
+        padding: 30px;
+        gap: 18px;
+    }
+    .DivisaoTextoIndigena p, .TextoIndigena {
+        max-width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .ImagemIndigenas {
+        max-width: 90%;
+        width: auto;
+    }
+}
+
+/* ...existing code... */
